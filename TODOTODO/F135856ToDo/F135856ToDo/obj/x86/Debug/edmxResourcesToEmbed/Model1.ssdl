@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="f135856TODOModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.3.5" ProviderManifestToken="3.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="f135856TODOModelStoreContainer">
+    <EntitySet Name="TODO" EntityType="f135856TODOModel.Store.TODO" store:Type="Tables" />
+  </EntityContainer>
+  <EntityType Name="TODO">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="datetime" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Content" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Deadline" Type="datetime" Nullable="false" />
+    <Property Name="finished" Type="bit" Nullable="false" />
+  </EntityType>
+</Schema>
